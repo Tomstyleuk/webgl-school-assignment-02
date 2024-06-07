@@ -1,0 +1,82 @@
+html,
+body {
+  color: black;
+  background: rgb(204, 249, 255);
+  background: linear-gradient(180deg, rgba(204, 249, 255, 0.5662464815027574) 0%, rgba(124, 232, 255, 1) 21%, rgba(0, 172, 223, 1) 60%, rgba(0, 128, 191, 1) 90%);
+  overflow-x: hidden;
+  scroll-behavior: initial;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#controls {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+  z-index: 1000;
+  padding: 20px 20px;
+  background-color: #606060;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #9c9c9c;
+}
+
+.active {
+  background-color: #c57b7b;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
